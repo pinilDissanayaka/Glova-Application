@@ -12,7 +12,8 @@ import warnings
 warnings.filterwarnings(action = 'ignore')
 
 #os.environ["REPLICATE_API_TOKEN"] = "r8_MgrHJRUeRANnasLX0l8HC1sQ1nDGBmr3lYZXB" #Hesh Llama2 Api
-os.environ["REPLICATE_API_TOKEN"] = "r8_D4rsaOegEBAAGAIDfzJEFBC3sDqtnJB0a1jY8" #Llama2 Api Era
+#os.environ["REPLICATE_API_TOKEN"] = "r8_D4rsaOegEBAAGAIDfzJEFBC3sDqtnJB0a1jY8" #Llama2 Api Era
+os.environ["REPLICATE_API_TOKEN"] = "r8_HIPlT6csbSlNx3CLgvzsFB0EqkqtlSA46Js4z"
 
 
 #with open('utils\model\predictor.pickle', 'rb') as file:

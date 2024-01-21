@@ -8,10 +8,11 @@
 /*** Button ***/
 .btn {
     transition: .5s;
+    background: #34418e;
 }
 
 .btn.btn-primary {
-    color: #FFFFFF;
+    color: #ffffff;
 }
 
 .btn-square {

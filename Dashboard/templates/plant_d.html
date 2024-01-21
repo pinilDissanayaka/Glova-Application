@@ -41,10 +41,11 @@
     <div class="container">
         <div class="row g-5">
             <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
-                <p class="mb-4">Welcome to our AI-Powered Plant Disease Identification digital guardian for your crops. Designed to elevate your farming experience, this platform harnesses the immense potential of artificial intelligence to safeguard your plants.Harness the power of AI to nurture your plants with care and precision. Explore our AI-Powered Plant Disease Identification web page and experience a new level of confidence and success in farming. Your crops deserve the best, and we're here to provide it.</p>
+                <p class="mb-4">Welcome to Glova – Your Personalized Skincare Companion!<br>🌟 Transform your skincare routine with Glova, the revolutionary app that harnesses the power of facial recognition technology and AI to cater to your unique skin needs. 🌟 </br>📸 Upload Your Selfie: Begin your skincare journey by uploading a clear selfie. Our advanced facial recognition technology analyzes your skin type, conditions, and concerns, providing a comprehensive understanding of your unique complexion.
+                    <br>Glova is more than an app; it's a skincare revolution personalized just for you. Embrace the future of skincare and embark on a journey towards healthier, glowing skin. Your beauty, your way, with Glova. 💖✨</p>
                 <form method="POST" action="{{ url_for('plant_d')}}" enctype="multipart/form-data">                 
                     <div class="mb-3">
-                        <label for="formFile" class="form-label">Click the "Choose File" button to select a photo of the plant or leaf that you want to diagnose. Ensure the image is clear and well-lit.</label>
+                        <label for="formFile" class="form-label">Click the "Choose File" button to select a photo that you want to diagnose. Ensure the image is clear and well-lit.</label>
                         <input class="form-control" type="file" id="formFile" accept="image/*" name="file" onchange="previewFile(this);">
                         </br>
                         <div class="col-12">
