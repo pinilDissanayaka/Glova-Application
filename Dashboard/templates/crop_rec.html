@@ -1,0 +1,111 @@
+{%extends 'base.html'%}
+
+{%block slide%}
+<div class="sidebar pe-4 pb-3">
+    <nav class="navbar bg-light navbar-light">
+        <a href="dash.html" class="navbar-brand mx-4 mb-3"><h2 class="m-0">AgriConnect</h2></a>
+        <div class="navbar-nav w-100">
+            <a href="\" class="nav-item nav-link"><i class="fa fa-chart-bar me-2"></i>Dashboard</a>
+            <a href="crop_rec.html" class="nav-item nav-link active"><i class="fa fa-laptop me-2"></i>Crop Recomendation</a>
+            <a href="plant_d.html" class="nav-item nav-link"><i class="fa fa-laptop me-2"></i>Disease Prediction</a>
+            <div class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i class="fa fa-laptop me-2"></i>B</a>
+                <div class="dropdown-menu bg-transparent border-0">
+                    <a href="button.html" class="dropdown-item">C</a>
+                    <a href="typography.html" class="dropdown-item">D</a>
+                    <a href="element.html" class="dropdown-item">E</a>
+                </div>
+            </div>
+            <a href="form.html" class="nav-item nav-link"><i class="fa fa-keyboard me-2"></i>F</a>
+            <a href="table.html" class="nav-item nav-link"><i class="fa fa-table me-2"></i>G</a>
+            <a href="chart.html" class="nav-item nav-link"><i class="fa fa-chart-bar me-2"></i>H</a>
+            <div class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i class="far fa-file-alt me-2"></i>Pages</a>
+                <div class="dropdown-menu bg-transparent border-0">
+                    <a href="signin.html" class="dropdown-item">I</a>
+                    <a href="signup.html" class="dropdown-item">J</a>
+                    <a href="404.html" class="dropdown-item">K</a>
+                    <a href="blank.html" class="dropdown-item">L</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+</div>
+<!-- Sidebar End -->
+{%endblock%}
+
+{%block content%}
+<!-- Crop Start -->
+<div class="container-xxl py-5">
+    <div class="container">
+        <div class="row g-5">
+            <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+                <p class="mb-4">Welcome to our Crop Recommendation feature, where science meets agriculture. Using cutting-edge Machine Learning technology, we analyze your location, soil composition, and local climate to provide tailored crop recommendations. Discover the crops that thrive in your unique conditions, and make data-backed decisions for a bountiful harvest. Farm smarter, not harder, with our precision recommendations.</p>
+                <form method="POST" action="{{ url_for('crop_rec') }}">
+                    <div class="row g-3">
+                        <div class="col-md-12">
+                            <label for="customRange3" class="form-label">Nitrogen : <label id="rangeValue1"> 0 </label></label>
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" role="switch"
+                                    id="flexSwitchCheckChecked" >
+                                <label class="form-check-label" for="flexSwitchCheckChecked">Use sensor value</label>
+                            </div>
+                            <input type="range" name = 'Nitrogen' class="form-range" min="0" max="100" step="0.0001" id="customRange3" oninput="rangeValue1.innerText = this.value" required>
+                        </div>
+                        <div class="col-md-12">
+                            <label for="customRange3" class="form-label">Phosporus : <label id="rangeValue2"> 0 </label></label>
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" role="switch"
+                                    id="flexSwitchCheckChecked" >
+                                <label class="form-check-label" for="flexSwitchCheckChecked">Use sensor value</label>
+                            </div>
+                            <input type="range" name = 'Phosporus' class="form-range" min="0" max="100" step="0.0001" id="customRange3" oninput="rangeValue2.innerText = this.value" required>
+                        </div>
+                        <div class="col-md-12">
+                            <label for="customRange3" class="form-label">Potassium : <label id="rangeValue3"> 0 </label></label>
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" role="switch"
+                                    id="flexSwitchCheckChecked" >
+                                <label class="form-check-label" for="flexSwitchCheckChecked">Use sensor value</label>
+                            </div>
+                            <input type="range" name = 'Potassium' class="form-range" min="0" max="100" step="0.0001" id="customRange3" oninput="rangeValue3.innerText = this.value" required>
+                        </div>
+                        <div class="col-md-12">
+                            <label for="customRange3" class="form-label">Ph Level : <label id="rangeValue4"> 0 </label></label>
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" role="switch"
+                                    id="flexSwitchCheckChecked" >
+                                <label class="form-check-label" for="flexSwitchCheckChecked">Use sensor value</label>
+                            </div>
+                            <input type="range" name = 'Ph' class="form-range" min="0" max="15" step="0.0001" id="customRange3" oninput="rangeValue4.innerText = this.value" required>
+                        </div>
+                        <div class="col-md-12">
+                            <label for="customRange3" class="form-label">Average Rainfall in % : <label id="rangeValue5"> 0 </label></label>
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" role="switch"
+                                    id="flexSwitchCheckChecked" >
+                                <label class="form-check-label" for="flexSwitchCheckChecked">Use sensor value</label>
+                            </div>
+                            <input type="range" name = 'Rainfall' class="form-range" min="0" max="100" step="0.0001" id="customRange3" oninput="rangeValue5.innerText = this.value" required>
+                        </div>
+                        <div class="col-md-12">
+                            <label>Your Location : </label>
+                            <input type="text" class="form-control" id="floatingInput" placeholder="Enter your location" name = "location">
+                        </div>
+                        <div class="col-12">
+                            <button class="btn btn-primary py-3 px-4" type="submit">Predict</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+                {% if pred_value != 0 %}
+                    <label>{{pred_value}} recommended by the A. I for your farm. </label>
+                {%endif%}
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Crop End -->
+
+{%endblock%}
