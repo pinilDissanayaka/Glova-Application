@@ -1,10 +1,9 @@
 # Glova: Revolutionizing Skincare with AI-Powered Personalization
 
 <div style="display: flex; flex-direction: row;">>
-    <img src="/img/Picture1.png" width="50%" />
-    <img src="/img/Picture2.jpeg" width="50%" />
+    <img src="/img/Picture1.png" width="350" />
+    <img src="/img/Picture2.jpeg" width="350" />
 </div>
-
 ## Description:
 
 Introducing Glova, a groundbreaking skincare app that has redefined the beauty industry by seamlessly integrating facial recognition technology and artificial intelligence. Developed for the IEEE Innovation Nation Sri Lanka 2023, Glova is set to transform the way individuals approach skincare, offering a personalized and intelligent solution tailored to unique skin types and conditions.
