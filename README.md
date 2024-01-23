@@ -1,6 +1,8 @@
 # Glova: Revolutionizing Skincare with AI-Powered Personalization
 
-![Image Alt text](/1705852016127.jpeg)
+![Glova frontend](/img/Picture2.jpeg
+
+![Glova AI](img/Picture2.jpeg))
 
 ## Description:
 
