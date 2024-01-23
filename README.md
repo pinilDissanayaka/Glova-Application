@@ -1,8 +1,8 @@
 # Glova: Revolutionizing Skincare with AI-Powered Personalization
 
 <div style="display: flex; flex-direction: row;">>
-    <img src="/img/Picture1.png" width="250" />
-    <img src="/img/Picture2.jpeg" width="250" />
+    <img src="/img/Picture1.png" width="50%" />
+    <img src="/img/Picture2.jpeg" width="50%" />
 </div>
 
 ## Description:
