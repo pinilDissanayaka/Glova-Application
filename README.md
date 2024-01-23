@@ -1,8 +1,9 @@
 # Glova: Revolutionizing Skincare with AI-Powered Personalization
 
-![Glova frontend](/img/Picture2.jpeg)
-
-![Glova AI](img/Picture2.jpeg)
+<div style="display: flex; flex-direction: row;">>
+    <img src="/img/Picture1.jpeg" width="500" />
+    <img src="/img/Picture2.jpeg" width="500" />
+</div>
 
 ## Description:
 
